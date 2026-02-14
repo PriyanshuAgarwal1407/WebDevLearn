@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+</head>
+
+<body>
+    <!-- Table Creation -->
+
+    <h3>Table 1</h3>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+        </tr>
+        <tr>
+            <td>Rohit</td>
+            <td>Frontend Dev</td>
+        </tr>
+        <tr>
+            <td>Mohit</td>
+            <td>Backend Dev</td>
+        </tr>
+        <tr>
+            <td>Anjali</td>
+            <td>Full Stack Dev</td>
+        </tr>
+    </table>
+
+    <h3>Table 2</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>10</td>
+                <td>$1.0</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>5</td>
+                <td>$1.50</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>15</td>
+                <td>$2.50</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h3>Table 3</h3>
+    <table border="2">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Contact info</th>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td>123456789</td>
+            <td>qwert@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Shyam</td>
+            <td>234567890</td>
+            <td>sdfgh@gmail.com</td>
+        </tr>
+        <td>Sita</td>
+        <td>98765432</td>
+        <td>zxcvb@gmail.com</td>
+        </tr>
+    </table>
+
+    <h3>Table 4</h3>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Row 3, Cell 1</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Table 5</h3>
+    <table border="1">
+        <tr>
+            <th>Level 1</th>
+            <th>Level 2</th>
+            <th>Level 3</th>
+            <th>Level 4</th>
+            <th>Level 5</th>
+        </tr>
+        <tr>
+            <td rowspan="7">System</td>
+            <td rowspan="4">System Apps</td>
+            <td rowspan="3">System Env</td>
+            <td>App Test</td>
+            <td rowspan="2">Foo</td>
+        </tr>
+        <tr>
+            <td>App Memory</td>
+        </tr>
+        <tr>
+            <td>App test</td>
+            <td rowspan="2">Bar</td>
+        </tr>
+        <tr>
+            <td>System Env 2</td>
+            <td>App Memory</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="3">System Memory</td>
+        </tr>
+        <tr>
+            <td>Memory Func</td>
+            <td>Foo</td>
+        </tr>
+        <tr>
+            <td>Apes Test</td>
+            <td>bar</td>
+        </tr>
+    </table>
+
+
+    <h2>Table Homework</h2>
+    <table border="3" cellpadding="4" cellspacing="0">
+        <tr>
+            <th colspan="6">CSE 4th Sem – Section D (Time Table)</th>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+
+        <tr>
+            <td>9:05–10:00</td>
+            <td>Discrete (L)</td>
+            <td>OS (L)</td>
+            <td>DAA (L)</td>
+            <td>COA (L)</td>
+            <td rowspan="2">OS Lab</td>
+        </tr>
+
+        <tr>
+            <td>10:00–10:55</td>
+            <td>DAA (L)</td>
+            <td>DAA (L)</td>
+            <td>OS (L)</td>
+            <td>MSD (L)</td>
+        </tr>
+
+        <tr>
+            <td>10:55–11:50</td>
+            <td rowspan="2">OS Lab</td>
+            <td rowspan="2">DAA Lab</td>
+            <td rowspan="2">MSD Lab</td>
+            <td>Sports</td>
+            <td>Discrete (L)</td>
+        </tr>
+
+        <tr>
+            <td>11:50–12:45</td>
+            <td>Lunch</td>
+            <td>COA (L)</td>
+        </tr>
+
+        <tr>
+            <td>12:45–1:40</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+            <td rowspan="2">DAA Lab</td>
+            <td>Lunch</td>
+        </tr>
+
+        <tr>
+            <td>1:40–2:35</td>
+            <td>OS (L)</td>
+            <td>MSD (L)</td>
+            <td>COA (L)</td>
+            <td>MSD (L)</td>
+        </tr>
+
+        <tr>
+            <td>2:35–3:30</td>
+            <td>CAC (Comm)</td>
+            <td>Discrete (L)</td>
+            <td>CAC (Comm)</td>
+            <td>Discrete (T)</td>
+            <td>CAC (Tech)</td>
+        </tr>
+
+        <tr>
+            <td>3:30–4:25</td>
+            <td>Library</td>
+            <td>Sports</td>
+            <td>Library</td>
+            <td>Library</td>
+            <td>Sports</td>
+        </tr>
+    </table>
+</body>
+
+</html>
