@@ -5,17 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attributes</title>
 </head>
+
 <body>
-    <!-- 1-id (it must be unique)-->
-    <h2 id=""contact>Contact me</h2>
+
+    <!-- ============================= -->
+    <!-- ID ATTRIBUTE -->
+    <!-- ============================= -->
+
+    <!-- 
+        id attribute:
+        - Must be UNIQUE in entire page.
+        - Used for:
+            ✔ Internal linking
+            ✔ CSS styling
+            ✔ JavaScript targeting
+    -->
+    <h2 id="contact">Contact Me</h2>
+
     <p>email: priyanshu@gmail.com</p>
+
+    <!-- 
+        href="#contact"
+        # means go to element with id="contact"
+        This is called internal linking (bookmark link).
+    -->
     <a href="#contact">Go to contact section</a>
 
+    <br><br>
+
+    <!-- ============================= -->
+    <!-- CLASS ATTRIBUTE -->
+    <!-- ============================= -->
+
+    <!-- 
+        class attribute:
+        - Can be used multiple times.
+        - Used for grouping elements.
+        - Mainly used in CSS & JavaScript.
+    -->
     <p class="note">First note for reader</p>
     <p class="note">Second note for reader</p>
     <p class="note">Third note for reader</p>
 
+    <br>
+
+    <!-- ============================= -->
+    <!-- STYLE ATTRIBUTE -->
+    <!-- ============================= -->
+
+    <!-- 
+        style attribute:
+        - Used for inline CSS.
+        - Not recommended for large projects.
+        - Used for quick styling.
+    -->
     <p style="color: red;">Don't close this page</p>
+
+    <!-- ============================= -->
+    <!-- TITLE ATTRIBUTE -->
+    <!-- ============================= -->
+
+    <!-- 
+        title attribute:
+        - Shows tooltip when user hovers mouse.
+        - Helpful for extra information.
+    -->
     <p title="Hyper Text Markup Language">HTML</p>
+
 </body>
-</html>
