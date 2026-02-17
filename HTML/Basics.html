@@ -1,14 +1,43 @@
 <!DOCTYPE html>
+<!-- 
+    <!DOCTYPE html> 
+    Tells the browser this document is HTML5.
+    Always written at the top.
+-->
+
 <html lang="en">
+<!-- 
+    <html> is the root element of the webpage.
+    lang="en" helps browsers and screen readers know the language.
+-->
 
 <head>
+    <!-- Character encoding (supports emojis, symbols, etc.) -->
     <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title shown in browser tab -->
     <title>My First Website</title>
 </head>
 
 <body>
-    <!-- HTML HEADING ELEMENTS  -->
+    <!-- 
+        <body> contains everything visible on the webpage.
+    -->
+
+    <!-- ============================= -->
+    <!-- HTML HEADING ELEMENTS -->
+    <!-- ============================= -->
+
+    <!-- 
+        Headings define titles and structure.
+        h1 is most important.
+        h6 is least important.
+        Only ONE h1 should be used per page.
+    -->
+
     <h1>Web Development Course</h1>
     <h2>Web Development Course</h2>
     <h3>Web Development Course</h3>
@@ -16,52 +45,122 @@
     <h5>Web Development Course</h5>
     <h6>Web Development Course</h6>
 
-    <!--? No matter how much whitespace you use inside HTML element content (which can include one or more space characters, but also line breaks), the HTML parser reduces each sequence of whitespace to a single space when rendering the code. -->
+    <!-- 
+        Whitespace rule:
+        Multiple spaces or line breaks inside HTML are treated as ONE space.
+    -->
 
+    <!-- ============================= -->
+    <!-- PARAGRAPH & TEXT FORMATTING -->
+    <!-- ============================= -->
 
-    <!-- HTML PARAGRAPH ELEMENTS  -->
+    <!-- 
+        <p> defines a paragraph.
+        Used for writing normal text content.
+    -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Animi minima a maiores aut possimus aperiam illo?
+        Harum beatae dolorum magni minima.
+    </p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. animi minima a maiores aut possimus aperiam illo? Harum
-        beatae dolorum magni minima. Dicta, fugiat? Aspernatur explicabo quisquam esse sed, facere praesentium.</p>
-    <br>   
-    <strong>Important text</strong> <!-- Bold + semantic emphasis -->
-    <em>Emphasized text</em> <!-- Italic + semantic emphasis -->
-    <mark>Highlighted text</mark> <!-- Visual highlight -->
+    <!-- 
+        <br> inserts a line break.
+        Should be used carefully (not for spacing layout).
+    -->
+    <br>
 
-    <br> <!-- Line break (use sparingly) -->
+    <!-- 
+        <strong>
+        Makes text bold AND adds semantic importance.
+        Used for important content.
+    -->
+    <strong>Important text</strong>
 
+    <!-- 
+        <em>
+        Makes text italic AND adds emphasis meaning.
+    -->
+    <em>Emphasized text</em>
 
-    <!-- Unordered List -->
+    <!-- 
+        <mark>
+        Highlights text visually.
+    -->
+    <mark>Highlighted text</mark>
+
+    <br>
+
+    <!-- ============================= -->
+    <!-- LISTS -->
+    <!-- ============================= -->
+
+    <!-- 
+        <ul> = Unordered list (bullets)
+        Used when order does not matter.
+    -->
     <ul>
-        <li>Item 1</li>
+        <li>Item 1</li> <!-- <li> = list item -->
         <li>Item 2</li>
     </ul>
 
-    <!-- Ordered List -->
+    <!-- 
+        <ol> = Ordered list (numbered)
+        Used when order matters.
+    -->
     <ol>
         <li>Step 1</li>
         <li>Step 2</li>
     </ol>
 
-    <!-- Description List (key-value pairs) -->
+    <!-- 
+        <dl> = Description list
+        Used for key-value pairs (like glossary).
+        <dt> = term
+        <dd> = description
+    -->
     <dl>
-        <dt>Term</dt>
-        <dd>Definition</dd>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
     </dl>
 
-    <!-- anchor tag -->
-    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">Visit YouTube</a>
+    <!-- ============================= -->
+    <!-- LINK (ANCHOR TAG) -->
+    <!-- ============================= -->
 
-    <br>
+    <!-- 
+        <a> creates a hyperlink.
+        href = link destination
+        target="_blank" = open in new tab
+        rel="noopener noreferrer" = security best practice
+    -->
+    <a href="https://youtube.com" 
+       target="_blank" 
+       rel="noopener noreferrer">
+        Visit YouTube
+    </a>
 
-    <!-- image tag -->
+    <br><br>
+
+    <!-- ============================= -->
+    <!-- IMAGE -->
+    <!-- ============================= -->
+
+    <!-- 
+        <img> displays an image.
+        src = image URL
+        alt = alternative text (important for accessibility & SEO)
+        width & height = image size
+        loading="lazy" = loads image only when needed (performance optimization)
+    -->
     <img 
-        src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-        alt="Man sitting on rock" 
-        width="300px" 
-        height="300px" 
+        src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=2074&auto=format&fit=crop"
+        alt="Man sitting on rock"
+        width="300"
+        height="300"
         loading="lazy"
     >
+
 </body>
 
 </html>
