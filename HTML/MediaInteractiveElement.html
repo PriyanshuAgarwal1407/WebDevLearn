@@ -1,0 +1,192 @@
+<!-- Image -->
+<!-- 🔗 https://unsplash.com
+🔗 https://pexels.com
+🔗 https://pixabay.com -->
+
+
+<!-- Audio -->
+<!-- 🔗 https://pixabay.com
+🔗 https://freemusicarchive.org
+🔗 https://mixkit.co/free-stock-music/ -->
+
+
+<!-- Video -->
+<!-- 🔗 https://pexels.com/videos/
+🔗 https://pixabay.com/videos/
+🔗 https://coverr.co -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media & Interactive Elements</title>
+</head>
+
+<body>
+
+    <!-- ===================================== -->
+    <!-- IMAGE -->
+    <!-- ===================================== -->
+
+    <!-- 
+        <img>
+        Used to display images.
+        src → image source
+        alt → alternative text (VERY IMPORTANT for accessibility & SEO)
+        width/height → size
+        loading="lazy" → improves performance
+    -->
+    <h2>Image Example</h2>
+    <img 
+        src="./Assets/RadhaKrishna.avif"
+        alt="RadhaKrishna Image"
+        width="190"
+        height="100%"
+        loading="lazy"
+    >
+
+
+    <!-- ===================================== -->
+    <!-- AUDIO -->
+    <!-- ===================================== -->
+
+    <!-- 
+        <audio>
+        Used to play sound/music.
+        controls → shows play/pause UI
+        autoplay → starts automatically
+        loop → repeats audio
+    -->
+    <h2>Audio Example</h2>
+    <audio controls>
+        <source src="./Assets/hareRamhareKrishna.mp3" type="audio/mp3">
+        Your browser does not support audio.
+    </audio>
+
+
+    <!-- ===================================== -->
+    <!-- VIDEO -->
+    <!-- ===================================== -->
+
+    <!-- 
+        <video>
+        Used to play videos.
+        controls → show player UI
+        poster → thumbnail before play
+    -->
+    <h2>Video Example</h2>
+    <video width="400" controls poster="https://via.placeholder.com/400">
+        <source src="./Assets/Sample.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+
+    <!-- ===================================== -->
+    <!-- IFRAME -->
+    <!-- ===================================== -->
+
+    <!-- 
+        <iframe>
+        Used to embed another website/page.
+        Common uses:
+        ✔ YouTube videos
+        ✔ Google Maps
+    -->
+    <h2>Embedded Website</h2>
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/zysUIv0-xak?si=gBlkCyJwz7VWPL45" title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen loading="lazy"></iframe>
+
+
+    <!-- ===================================== -->
+    <!-- DETAILS & SUMMARY -->
+    <!-- ===================================== -->
+
+    <!-- 
+        <details>
+        Creates collapsible content.
+        <summary> is clickable heading.
+    -->
+    <h2>FAQ Section</h2>
+
+    <details>
+        <summary>What is HTML?</summary>
+        <p>HTML stands for HyperText Markup Language.</p>
+    </details>
+
+
+    <!-- ===================================== -->
+    <!-- PROGRESS BAR -->
+    <!-- ===================================== -->
+
+    <!-- 
+        <progress>
+        Shows task progress.
+        value → current progress
+        max → total
+    -->
+    <h2>Progress Example</h2>
+    <progress value="70" max="100"></progress>
+
+
+    <!-- ===================================== -->
+    <!-- METER -->
+    <!-- ===================================== -->
+
+    <!-- 
+        <meter>
+        Used to show measurement within range.
+        Example: disk usage, battery level.
+    -->
+    <h2>Battery Level</h2>
+    <meter value="0.6">60%</meter>
+
+
+    <!-- ===================================== -->
+    <!-- BUTTON -->
+    <!-- ===================================== -->
+
+    <!-- 
+        <button>
+        Used for clickable actions.
+        Often used with JavaScript.
+    -->
+    <h2>Interactive Button</h2>
+    <button onclick="alert('Hello Priyanshu!')">
+        Click Me
+    </button>
+
+
+    <!-- ===================================== -->
+    <!-- INPUT (Interactive Example) -->
+    <!-- ===================================== -->
+
+    <h2>User Input</h2>
+
+    <!-- Text input -->
+    <input type="text" placeholder="Enter your name">
+
+    <!-- Date picker -->
+    <input type="date">
+
+    <!-- Range slider -->
+    <input type="range" min="0" max="100">
+
+
+    <br><br>
+    <h2>Location:</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6979.599797286301!2d77.021!3d28.9933!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1771336787504!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>
+
+
+<!-- 
+✔ Download .jpg or .png for images
+✔ Download .mp3 for audio
+✔ Download .mp4 for video -->
