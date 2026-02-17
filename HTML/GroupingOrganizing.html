@@ -4,29 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grouping & Page Structure</title>
+
+    <!-- Internal CSS -->
     <style>
+        /*
+            .card
+            Class selector (.)
+            Used to style multiple elements with same design.
+        */
         .card{
-            border: 2px solid black;
-            padding: 10px;
-            margin: 15px;
-            background-color: aliceblue;
+            border: 2px solid black;   /* Adds border around element */
+            padding: 10px;            /* Space inside the element */
+            margin: 15px;             /* Space outside the element */
+            background-color: aliceblue; /* Background color */
         }
+
+        /*
+            .highlight
+            Used to highlight specific text.
+        */
         .highlight{
-            color: red;
-            font-weight: bold;
+            color: red;           /* Text color */
+            font-weight: bold;    /* Makes text bold */
         }
     </style>
 </head>
+
 <body>
-    <!-- <div>
-        <h1>My first blog post</h1>
-        <p>This is my introduction paragraph HTML</p>
-        <p>I love doing <span style="color:violet;">coding</span></p>
-    </div> -->
+
+    <!-- ============================= -->
+    <!-- DIV (Block-Level Container) -->
+    <!-- ============================= -->
+
+    <!-- 
+        <div> is a block-level container.
+        Used to group content together.
+        Very important for layout & design.
+        It takes full width by default.
+    -->
 
     <div class="card">
+        <!-- 
+            class="card"
+            Applies CSS styles defined in .card
+        -->
+
         <h2>This is HTML course</h2>
-        <p>I am learning <span class="highlight">HTML</span> and it is amazing</p>
+
+        <p>
+            I am learning 
+            
+            <!-- ============================= -->
+            <!-- SPAN (Inline Container) -->
+            <!-- ============================= -->
+
+            <!-- 
+                <span> is an inline container.
+                Used to style part of text.
+                Does NOT break line.
+            -->
+            <span class="highlight">HTML</span> 
+            
+            and it is amazing
+        </p>
+
     </div>
+
 </body>
 </html>
