@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Professional Form</title>
+</head>
+<body>
+
+<h1>Complete Registration Form</h1>
+
+<!-- 
+    form tag:
+    action = where data will be sent
+    method = POST (secure way to send data)
+    enctype = required for file upload
+-->
+<form action="/submit" method="POST" enctype="multipart/form-data">
+
+    <!-- Hidden field:
+         Used to send data that user cannot see -->
+    <input type="hidden" name="form_id" value="REG2026">
+
+    <!-- Fieldset groups related inputs -->
+    <fieldset>
+        <!-- Legend gives title to fieldset -->
+        <legend>Personal Information</legend>
+
+        <!-- label connects with input using for + id -->
+        <label for="fullname">Full Name:</label>
+
+        <!-- 
+            type="text" → normal text input
+            required → must fill
+            maxlength → limit characters
+            placeholder → hint text
+        -->
+        <input type="text" id="fullname" name="fullname"
+               placeholder="Enter your full name"
+               required maxlength="50">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <!-- type="email" → checks valid email format automatically -->
+        <input type="email" id="email" name="email"
+               placeholder="example@gmail.com"
+               required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <!-- 
+            type="password" → hides text
+            minlength → minimum characters
+        -->
+        <input type="password" id="password" name="password"
+               required minlength="6" maxlength="12">
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <!-- 
+            type="tel" → phone number input
+            pattern → custom validation (10 digits only)
+        -->
+        <input type="tel" id="phone" name="phone"
+               pattern="[0-9]{10}"
+               placeholder="10 digit number"
+               required>
+        <br><br>
+
+        <label for="age">Age:</label>
+        <!-- 
+            type="number"
+            min & max → restrict value range
+        -->
+        <input type="number" id="age" name="age"
+               min="18" max="60" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <!-- type="date" → calendar picker -->
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="website">Website:</label>
+        <!-- type="url" → checks valid website format -->
+        <input type="url" id="website" name="website"
+               placeholder="https://example.com">
+        <br><br>
+
+        <label for="search">Search Skill:</label>
+        <!-- type="search" → search field -->
+        <input type="search" id="search" name="search">
+        <br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Selections</legend>
+
+        <p>Gender:</p>
+
+        <!-- 
+            type="radio"
+            Same name → only one can be selected
+        -->
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <p>Skills:</p>
+
+        <!-- 
+            type="checkbox"
+            Multiple selections allowed
+        -->
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js" name="skills" value="js">
+        <label for="js">JavaScript</label>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <!-- 
+            select → dropdown
+            option → choices
+        -->
+        <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+        <br><br>
+
+        <label for="city">City (Auto Suggest):</label>
+        <!-- 
+            datalist → auto suggestions while typing
+        -->
+        <input list="cities" id="city" name="city">
+        <datalist id="cities">
+            <option value="Delhi">
+            <option value="Mumbai">
+            <option value="Bangalore">
+        </datalist>
+        <br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Other Information</legend>
+
+        <label for="color">Favorite Color:</label>
+        <!-- type="color" → color picker -->
+        <input type="color" id="color" name="color" value="#ff0000">
+        <br><br>
+
+        <label for="experience">Experience:</label>
+        <!-- type="range" → slider input -->
+        <input type="range" id="experience" name="experience"
+               min="0" max="100" value="50">
+        <br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <!-- type="file" → upload file -->
+        <input type="file" id="resume" name="resume" multiple>
+        <br><br>
+
+        <label for="message">Message:</label>
+        <!-- textarea → multi-line text input -->
+        <textarea id="message" name="message"
+                  rows="4" cols="40"
+                  placeholder="Write your message..."
+                  required></textarea>
+        <br><br>
+
+    </fieldset>
+
+    <!-- readonly → cannot edit but visible -->
+    <label>Referral Code:</label>
+    <input type="text" value="REF123" readonly>
+    <br><br>
+
+    <!-- disabled → cannot edit and not submitted -->
+    <label>Disabled Field:</label>
+    <input type="text" value="Cannot Edit" disabled>
+    <br><br>
+
+    <!-- Submit button → sends form -->
+    <button type="submit">Submit Form</button>
+
+    <!-- Reset button → clears all fields -->
+    <button type="reset">Reset Form</button>
+
+    <!-- Normal button → for JS actions -->
+    <button type="button" onclick="alert('Button Clicked')">
+        Click Me
+    </button>
+
+</form>
+
+</body>
+</html>
